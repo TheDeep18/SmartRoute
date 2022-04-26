@@ -42,11 +42,12 @@
   <nav class="navbar">
     <div class="container-fluid navbarContainer">
       <a class="navbarBrand" href="index.html">SmartRoute</a>
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="navItem">
-            <a class="navLink" href="./about.html">About Us</a>
-          </li>
-        </ul>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="navItem">
+          <a class="navLink" href="./about.html">About Us</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <div class="container mainContainer">
     <!-- <img class="map" src="./sitemap.jpg" alt=""> -->
@@ -129,46 +130,46 @@
         </table>
       </div>
       <div class="container directionBlocks">
-      
-
-            <div class="my-2 yourLocationClass">
-              <select onchange="getStartBlockCordinate(this)" class="form-select" id="yourLocation">
-                <option selected>Select your location</option>
-                <option value="1">Block A</option>
-                <option value="2">Block B</option>
-                <option value="3">Block C</option>
-                <option value="4">Block D</option>
-                <option value="5">Block E</option>
-                <option value="6">Block F</option>
-                <option value="7">Block G</option>
-                <option value="8">Block H</option>
-                <option value="9">Block I</option>
-                <option value="10">Block J</option>
-                <option value="11">Block K</option>
-                <option value="12">Block L</option>
-              </select>
-            </div>
 
 
-            <div class="destLocationClass">
-              <select onchange="getEndBlockCordinate(this)" class="form-select" id="destLocation">
-                <option selected>Select the destination</option>
-                <option value="1">Block A</option>
-                <option value="2">Block B</option>
-                <option value="3">Block C</option>
-                <option value="4">Block D</option>
-                <option value="5">Block E</option>
-                <option value="6">Block F</option>
-                <option value="7">Block G</option>
-                <option value="8">Block H</option>
-                <option value="9">Block I</option>
-                <option value="10">Block J</option>
-                <option value="11">Block K</option>
-                <option value="12">Block L</option>
-              </select>
-            </div>
+        <div class="my-2 yourLocationClass">
+          <select onchange="getStartBlockCordinate(this)" class="form-select" id="yourLocation">
+            <option selected>Select your location</option>
+            <option value="1">Block A</option>
+            <option value="2">Block B</option>
+            <option value="3">Block C</option>
+            <option value="4">Block D</option>
+            <option value="5">Block E</option>
+            <option value="6">Block F</option>
+            <option value="7">Block G</option>
+            <option value="8">Block H</option>
+            <option value="9">Block I</option>
+            <option value="10">Block J</option>
+            <option value="11">Block K</option>
+            <option value="12">Block L</option>
+          </select>
+        </div>
 
-      
+
+        <div class="destLocationClass">
+          <select onchange="getEndBlockCordinate(this)" class="form-select" id="destLocation">
+            <option selected>Select the destination</option>
+            <option value="1">Block A</option>
+            <option value="2">Block B</option>
+            <option value="3">Block C</option>
+            <option value="4">Block D</option>
+            <option value="5">Block E</option>
+            <option value="6">Block F</option>
+            <option value="7">Block G</option>
+            <option value="8">Block H</option>
+            <option value="9">Block I</option>
+            <option value="10">Block J</option>
+            <option value="11">Block K</option>
+            <option value="12">Block L</option>
+          </select>
+        </div>
+
+
       </div>
       <div class="container">
         <div onclick="showDirectionClick()" class="mybtn btn-primary button" id="btn">Show Direction</div>
