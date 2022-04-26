@@ -71,10 +71,10 @@ function getBlockCordinate(selectedBlock) {
       return grid[32][5]   // Block H
       break;
     case '9':
-      return grid[31][15]  // Block I
+      return grid[30][15]  // Block I
       break;
     case '10':
-      return grid[41][14] // Block J
+      return grid[40][14] // Block J
       break;
     case '11':
       return grid[42][28] // Block K
@@ -197,7 +197,7 @@ function setup() {
   // start = grid[0][0]
   // end = grid[cols - 1][rows - 1]
   start = grid[32][41]
-  end = grid[17][15]
+  end = grid[32][41]
   start.wall = false
   end.wall = false
 
