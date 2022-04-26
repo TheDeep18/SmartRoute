@@ -100,7 +100,9 @@ var end;
 var w, h
 var path = [];
 var exitDraw = false;
-
+// var canvas = document.getElementById('responsiveCanvas');
+// var heightRatio = 1.5;
+// canvas.height = canvas.width * heightRatio;
 
 
 function Spot(i, j) {
@@ -165,6 +167,7 @@ function Spot(i, j) {
 
 
 function setup() {
+
   // alert("setup")
   createCanvas(550, 550);
   console.log("A*");

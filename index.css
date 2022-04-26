@@ -1,3 +1,6 @@
+#responsiveCanvas{
+    width: 100%;
+}
 .container {
     justify-content: center;
 }
@@ -33,7 +36,7 @@ main {
     align-items: center;
     text-align: center;
     justify-content: center;
-    width: 455px;
+    width: 400px;
 }
 
 .aboutus {
@@ -44,7 +47,7 @@ main {
     display: flex;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
 
     .aboutus {
         display: block;
@@ -74,8 +77,49 @@ main {
         width: 100%;
     }
 
-    .directionBlocks{
+.directionBlocks {
+    width: 63%;
+}
+
+
+}
+@media only screen and (max-width: 400px) {
+
+    .aboutus {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: auto;
+        position: relative;
+    }
+    /* #responsiveCanvas{
+        height: 300px;
+    } */
+
+    .aboutusItem {
+        /* position: absolute; */
+        /* left: 50%; */
+        display: block;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    canvas{
+        display: block;
+        height: 400px;
+        width: 80%;
+    }
+
+    .dept{
         width: 100%;
+    }
+
+    .directionBlocks{
+        width: 80%;
     }
 
 
