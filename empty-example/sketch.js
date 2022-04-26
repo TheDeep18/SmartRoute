@@ -35,6 +35,8 @@ function showDirectionClick() {
     draw()
   }
 
+  
+
 
 
 }
@@ -173,7 +175,7 @@ function setup() {
   }
   windowResized()
   // alert("setup")
-  createCanvas(300, 300);
+  createCanvas(380, 380);
   pixelDensity(1)
   console.log("A*");
 
