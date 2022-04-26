@@ -12,7 +12,7 @@
     body {
       padding: 0;
       margin: 0;
-      height: 100%;
+      /* height: 100%; */
     }
   </style>
   <link rel="stylesheet" href="./index.css">
@@ -41,81 +41,84 @@
   </nav>
   <div class="container mainContainer">
     <!-- <img class="map" src="./sitemap.jpg" alt=""> -->
-    <main>
-      <!-- <canvas id="responsiveCanvas"></canvas> -->
-    </main>
+    <div class="container" id="canvas">
+      <main>
+        <!-- <canvas id="responsiveCanvas"></canvas> -->
+        <!-- <canvas id="defaultCanvas0" class="p5Canvas"  style="width: 550px; height: 550px;"></canvas> -->
+      </main>
+    </div>
     <div class="container rightSide my-1">
-            <div class="container dept my-1">
-              <h3 style="text-align: center;">Departments</h3>
-              <table>
-                <tr>
-                  <th>Sr. No.</th>
-                  <th>Departments</th>
-                  <th>Block</th>
-                </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Principle's Office and Administration</td>
-                  <td>A</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>Information Technology Department</td>
-                  <td>B</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td>Electrical Engineering Department</td>
-                  <td>C</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td>Computer Engineering Department</td>
-                  <td>D</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td>Gymkhana, Canteen, NSS & NCC</td>
-                  <td>E</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>Electronics and Communication Engineering</td>
-                  <td>F</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td>Power Electronics Engineering</td>
-                  <td>G</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td>Chemical Engineering Department</td>
-                  <td>H</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>General & IC Department</td>
-                  <td>I</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td>Chemical Engineering Department</td>
-                  <td>J</td>
-                </tr>
-                <tr>
-                  <td>11</td>
-                  <td>Instrumentation & Control Engineering</td>
-                  <td>K</td>
-                </tr>
-                <tr>
-                  <td>12</td>
-                  <td>Electrical Engineering Department</td>
-                  <td>L</td>
-                </tr>
-            
-              </table>
-            </div>
+      <div class="container dept my-1">
+        <h3 style="text-align: center;">Departments</h3>
+        <table>
+          <tr>
+            <th>Sr. No.</th>
+            <th>Departments</th>
+            <th>Block</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Principle's Office and Administration</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Information Technology Department</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Electrical Engineering Department</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Computer Engineering Department</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Gymkhana, Canteen, NSS & NCC</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Electronics and Communication Engineering</td>
+            <td>F</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Power Electronics Engineering</td>
+            <td>G</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Chemical Engineering Department</td>
+            <td>H</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>General & IC Department</td>
+            <td>I</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Chemical Engineering Department</td>
+            <td>J</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>Instrumentation & Control Engineering</td>
+            <td>K</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>Electrical Engineering Department</td>
+            <td>L</td>
+          </tr>
+
+        </table>
+      </div>
       <div class="container directionBlocks">
         <div class="col d-flex">
           <div class="col-md my-2">
@@ -161,7 +164,9 @@
             </div>
           </div>
         </div>
-        <div onclick="showDirectionClick()" class="btn btn-primary button">Show Direction</div>
+        <div class="container">
+          <div onclick="showDirectionClick()" class="btn btn-primary button">Show Direction</div>
+        </div>
       </div>
 
     </div>

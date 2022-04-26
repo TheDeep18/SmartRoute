@@ -1,15 +1,15 @@
-#responsiveCanvas{
+/* #responsiveCanvas{
     width: 100%;
-}
-.container {
+} */
+/* .container {
     justify-content: center;
-}
+} */
 
-main {
+/* main {
     justify-content: center;
     display: flex;
-    /* background-color: white; */
-}
+     background-color: white; 
+} */
 
 main {
     position: relative;
@@ -64,8 +64,8 @@ main {
         display: block;
         align-items: center;
         justify-content: center;
-        width: auto;
-        margin: auto;
+        width: 100%;
+        margin-left: 100px;
         margin-bottom: 20px;
     }
 
@@ -75,6 +75,13 @@ main {
 
     .dept{
         width: 100%;
+    }
+    .btn{
+        display: flex;
+        display: block;
+        /* margin-left: 30px; */
+        width: 200px;
+        justify-self: center;
     }
 
 .directionBlocks {
@@ -92,6 +99,14 @@ main {
         width: auto;
         margin: auto;
         position: relative;
+    }
+    #defaultCanvas0{
+        width: 4px;
+    }
+
+    .canvas{
+        width: 50vw;
+        display: flex;
     }
     /* #responsiveCanvas{
         height: 300px;
