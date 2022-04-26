@@ -127,6 +127,11 @@
         width: 4px;
     }
 
+    #canvas {
+        margin: 18px;
+        width: 90%;
+    }
+
 
     .aboutusItem {
         /* position: absolute; */
@@ -147,6 +152,13 @@
 
 
 
+}
+
+@media only screen and (max-width: 400px) {
+        #canvas {
+            margin: 12px;
+            width: 956%;
+        }
 }
 
 .dept {
