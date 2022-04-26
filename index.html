@@ -22,7 +22,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">SmartRoute</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -31,17 +31,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
+          </li> -->
+  <!-- <li class="nav-item">
             <a class="nav-link" href="./about.html">About</a>
           </li>
 
+  </nav> -->
+  <nav class="navbar">
+    <div class="container-fluid navbarContainer">
+      <a class="navbarBrand" href="index.html">SmartRoute</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="navItem">
+            <a class="navLink" href="./about.html">About Us</a>
+          </li>
+        </ul>
   </nav>
   <div class="container mainContainer">
     <!-- <img class="map" src="./sitemap.jpg" alt=""> -->
-    <div class="container" id="canvas">
+    <div class="containerCanvas" id="canvas">
       <main>
         <!-- <canvas id="responsiveCanvas"></canvas> -->
         <!-- <canvas id="defaultCanvas0" class="p5Canvas"  style="width: 550px; height: 550px;"></canvas> -->
@@ -120,11 +129,10 @@
         </table>
       </div>
       <div class="container directionBlocks">
-        <div class="col d-flex">
-          <div class="col-md my-2">
-            <div class="form-floating">
-              <select onchange="getStartBlockCordinate(this)" class="form-select" id="yourLocation"
-                aria-label="Floating label select example">
+      
+
+            <div class="my-2 yourLocationClass">
+              <select onchange="getStartBlockCordinate(this)" class="form-select" id="yourLocation">
                 <option selected>Select your location</option>
                 <option value="1">Block A</option>
                 <option value="2">Block B</option>
@@ -139,13 +147,11 @@
                 <option value="11">Block K</option>
                 <option value="12">Block L</option>
               </select>
-              <label for="floatingSelectGrid">Select your location</label>
             </div>
-          </div>
-          <div class="col-md my-2">
-            <div class="form-floating ">
-              <select onchange="getEndBlockCordinate(this)" class="form-select" id="destLocation"
-                aria-label="Floating label select example">
+
+
+            <div class="destLocationClass">
+              <select onchange="getEndBlockCordinate(this)" class="form-select" id="destLocation">
                 <option selected>Select the destination</option>
                 <option value="1">Block A</option>
                 <option value="2">Block B</option>
@@ -160,15 +166,13 @@
                 <option value="11">Block K</option>
                 <option value="12">Block L</option>
               </select>
-              <label for="floatingSelectGrid">Select Your destination</label>
             </div>
-          </div>
-        </div>
-        <div class="container">
-          <div onclick="showDirectionClick()" class="btn btn-primary button">Show Direction</div>
-        </div>
-      </div>
 
+      
+      </div>
+      <div class="container">
+        <div onclick="showDirectionClick()" class="mybtn btn-primary button" id="btn">Show Direction</div>
+      </div>
     </div>
   </div>
 

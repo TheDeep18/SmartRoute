@@ -24,6 +24,20 @@ function getEndBlockCordinate(selectedObject) {
 
 }
 
+//Get the button:
+mybutton = document.getElementById("btn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
 function showDirectionClick() {
   // alert("inside")
   openSet = []
@@ -34,12 +48,11 @@ function showDirectionClick() {
   while (!exitDraw) {
     draw()
   }
-
-  
-
-
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0;
 
 }
+
 
 
 
@@ -126,6 +139,7 @@ function Spot(i, j) {
     fill(col);
     if (this.wall) {
       fill(204, 204, 32)
+      // fill(151, 118, 27)
       // fill(0)
     }
     if (this.block) {
