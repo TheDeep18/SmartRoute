@@ -168,12 +168,12 @@ function Spot(i, j) {
 
 function setup() {
 
-  // function windowResized() {
-  //   resizeCanvas(400, 400);
-  // }
-  // windowResized()
+  function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+  }
+  windowResized()
   // alert("setup")
-  createCanvas(500, 500);
+  createCanvas(300, 300);
   pixelDensity(1)
   console.log("A*");
 
