@@ -12,6 +12,7 @@
     body {
       padding: 0;
       margin: 0;
+      height: 100%;
     }
   </style>
   <link rel="stylesheet" href="../index.css">
@@ -42,7 +43,7 @@
     <!-- <img class="map" src="./sitemap.jpg" alt=""> -->
     <main>
     </main>
-    <div class="container rightSide m-2">
+    <div class="container rightSide my-1">
             <div class="container dept my-1">
               <h3 style="text-align: center;">Departments</h3>
               <table>
@@ -109,14 +110,14 @@
                 <tr>
                   <td>12</td>
                   <td>Electrical Engineering Department</td>
-                  <td></td>
+                  <td>L</td>
                 </tr>
             
               </table>
             </div>
-      <div class="container mt-4 my-1 directionBlocks">
+      <div class="container mt-2 directionBlocks">
         <div class="col d-flex">
-          <div class="col-md my-4">
+          <div class="col-md my-2">
             <div class="form-floating">
               <select onchange="getStartBlockCordinate(this)" class="form-select" id="yourLocation"
                 aria-label="Floating label select example">
@@ -137,7 +138,7 @@
               <label for="floatingSelectGrid">Select your location</label>
             </div>
           </div>
-          <div class="col-md my-4">
+          <div class="col-md my-2">
             <div class="form-floating ">
               <select onchange="getEndBlockCordinate(this)" class="form-select" id="destLocation"
                 aria-label="Floating label select example">

@@ -95,7 +95,7 @@ td,
 th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 6px;
+    padding: 0px;
 }
 
 tr:hover {
@@ -104,7 +104,6 @@ tr:hover {
 }
 
 .directionBlocks{
-    justify-content: center;
     margin-left: 30px;
 }
 
