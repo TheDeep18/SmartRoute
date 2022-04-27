@@ -1777,8 +1777,8 @@ function draw() {
   }
 
 
-  background(0)
-  // background(255)
+  // background(0)
+  background(255)
 
 
   for (var i = 0; i < cols; i++) {
