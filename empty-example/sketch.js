@@ -104,8 +104,8 @@ function getBlockCordinate(selectedBlock) {
 }
 
 
-var cols = 75;
-var rows = 75;
+var cols = 50;
+var rows = 50;
 var grid = new Array(cols);
 
 var openSet = []
