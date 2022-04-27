@@ -56,6 +56,10 @@
     display: flex;
 }
 
+.destLocation:hover{
+    cursor: pointer;
+}
+
 #btn{
     padding: 2px;
     background-color: rgb(8, 8, 51);
@@ -67,7 +71,12 @@
         /* width: 400px; */
         margin: auto;
         width: 50%;
+        margin-bottom: 60px;
         
+}
+#btn:hover{
+    background-color:rgb(56, 56, 180) ;
+    cursor: pointer;
 }
 
 #canvas{

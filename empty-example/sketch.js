@@ -104,8 +104,8 @@ function getBlockCordinate(selectedBlock) {
 }
 
 
-var cols = 50;
-var rows = 50;
+var cols = 75;
+var rows = 75;
 var grid = new Array(cols);
 
 var openSet = []
@@ -189,7 +189,7 @@ function setup() {
   }
   windowResized()
   // alert("setup")
-  createCanvas(360, 360);
+  createCanvas(300, 300);
   pixelDensity(1)
   console.log("A*");
 
@@ -1777,8 +1777,8 @@ function draw() {
   }
 
 
-  // background(0)
-  background(255)
+  background(0)
+  // background(255)
 
 
   for (var i = 0; i < cols; i++) {
